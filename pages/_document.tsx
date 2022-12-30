@@ -5,7 +5,9 @@ export default function Document() {
     <Html lang="ja">
       <Head />
       <body className='bg-slate-900 text-slate-200'>
-        <Main />
+        <div className='container mx-auto'>
+          <Main />
+        </div>
         <NextScript />
       </body>
     </Html>
