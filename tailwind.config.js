@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['-apple-system','BlinkMacSystemFont','"Hiragino Kaku Gothic ProN"','"Hiragino Sans"','Meiryo','sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
