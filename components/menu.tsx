@@ -14,8 +14,8 @@ export default function Menu() {
       text: "全て",
     },
     {
-      type: "text",
-      text: "エッセイ",
+      type: "blog",
+      text: "ブログ",
     },
     {
       type: "novel",
