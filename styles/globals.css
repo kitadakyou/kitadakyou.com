@@ -1,3 +1,22 @@
+:root {
+  --color-all-button: #c62828;
+  --color-all-button-rgb: 198, 40, 40;
+
+  --color-text-button: #009688;
+  --color-text-button-rgb: 0, 150, 136;
+
+  --color-novel-button: #ab47bc;
+  --color-novel-button-rgb: 171, 71, 188;
+
+  --color-music-button: #d81b60;
+  --color-music-button-rgb: 216, 27, 96;
+
+  --color-stream-button: #1976d2;
+  --color-stream-button-rgb: 25, 118, 210;
+}
+
+
+
 body {
   background-color: #0a1929;
   color: #E0E3E7;
