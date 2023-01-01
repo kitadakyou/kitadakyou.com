@@ -1,0 +1,60 @@
+.button {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+
+  border-style: solid;
+  border-width: 2px;
+
+  min-width: 10rem;
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+
+.button[data-is-selected=true] {
+  color: #E0E3E7;
+}
+
+.button[data-is-selected=false] {
+  background-color: transparent;
+}
+
+.allButton {
+  border-color: #512da8;
+}
+
+.allButton[data-is-selected=true] {
+  background-color: #512da8;
+}
+
+.allButton[data-is-selected=false] {
+  color: #512da8;
+}
+
+.textButton {
+  border-color: #009688;
+}
+
+.textButton[data-is-selected=true] {
+  background-color: #009688;
+}
+
+.textButton[data-is-selected=false] {
+  color: #009688;
+}
+
+.novelButton {
+  border-color: #bf360c;
+}
+
+.novelButton[data-is-selected=true] {
+  background-color: #bf360c;
+}
+
+.novelButton[data-is-selected=false] {
+  color: #bf360c;
+}

@@ -1,9 +1,10 @@
-import Header from '../components/header'
+import Menu from '../components/menu'
+import styles from '../styles/components/index.module.css'
 
-export default function Home() {
+export default function Index() {
   return (
-    <p>
-      テストメッセージ
-    </p>
-  )
+    <div className={styles.outer}>
+      <Menu />
+    </div>
+    )
 }
