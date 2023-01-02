@@ -1,13 +1,13 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Header from '../components/header'
+import MyHeader from '../components/myheader'
 
 export default function Document() {
   return (
     <Html lang="ja">
       <Head />
-      <body className='bg-slate-900 text-slate-200'>
-        <div className='container mx-auto'>
-          <Header />
+      <body>
+        <div className='container'>
+          <MyHeader />
           <Main />
         </div>
         <NextScript />
