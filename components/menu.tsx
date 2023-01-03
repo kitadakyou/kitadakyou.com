@@ -6,15 +6,36 @@ import styles from '../styles/components/menu.module.css'
 export default function Menu() {
   const [selected, setSelected] = useState("")
   function selectButton(e: any) {
-    console.log(e)
     setSelected(e)
   }
+  const buttonInfo = [
+    {
+      type: "all",
+      text: "全て",
+    },
+    {
+      type: "text",
+      text: "エッセイ",
+    },
+    {
+      type: "novel",
+      text: "小説",
+    },
+    {
+      type: "music",
+      text: "音楽",
+    },
+    {
+      type: "stream",
+      text: "配信",
+    },
+  ]
 
   return (
     <div className={styles.outline}>
-      <GenreButton type="all" selected={selected === "all"} onClick={selectButton} />
-      <GenreButton type="text" selected={selected === "text"} onClick={selectButton} />
-      <GenreButton type="novel" selected={selected === "novel"} onClick={selectButton} />
+      {buttonInfo.map(bi => 
+        <GenreButton text={bi.text} type={bi.type} selected={selected === bi.type} onClick={selectButton} />
+      )}
     </div>
     )
 }

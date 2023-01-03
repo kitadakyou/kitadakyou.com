@@ -1,6 +1,7 @@
 import styles from '../styles/components/genreButton.module.css'
 
 type Props = {
+  text: string,
   type: string,
   selected?: boolean,
   onClick: any
@@ -14,17 +15,10 @@ export default function GenreButton(props: Props) {
       return styles.textButton
     } else if(props.type == 'novel') {
       return styles.novelButton
-    }
-    return ''
-  }
-
-  const getText =  (): string => {
-    if (props.type == 'all') {
-      return '全て'
-    } else if(props.type == 'text') {
-      return 'エッセイ'
-    } else if(props.type == 'novel') {
-      return '小説'
+    } else if (props.type == 'music') {
+      return styles.musicButton
+    } else if (props.type == 'stream') {
+      return styles.streamButton
     }
     return ''
   }
@@ -40,8 +34,7 @@ export default function GenreButton(props: Props) {
       onClick={clickHandler}
       data-type={props.type}
     >
-        {getText()}
-        {props.selected}
+        {props.text}
     </button>
   )
 }
