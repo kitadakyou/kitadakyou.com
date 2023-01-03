@@ -13,48 +13,88 @@
   text-align: center;
 
   font-size: 1.5rem;
+  cursor: pointer;
 }
-
 .button[data-is-selected=true] {
   color: #E0E3E7;
 }
-
 .button[data-is-selected=false] {
   background-color: transparent;
+  transition: background-color .5s, color .5s border-color .5s;
 }
+.button[data-is-selected=false]:hover {
+  color: #E0E3E7cd;
+}
+
 
 .allButton {
-  border-color: #512da8;
+  border-color: var(--color-all-button);
 }
-
 .allButton[data-is-selected=true] {
-  background-color: #512da8;
+  background-color: var(--color-all-button);
+}
+.allButton[data-is-selected=false] {
+  color: var(--color-all-button);
+}
+.allButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-all-button-rgb), .75);
+  border-color: rgba(var(--color-all-button-rgb), .25);
 }
 
-.allButton[data-is-selected=false] {
-  color: #512da8;
-}
 
 .textButton {
-  border-color: #009688;
+  border-color: var(--color-text-button);
 }
-
 .textButton[data-is-selected=true] {
-  background-color: #009688;
+  background-color: var(--color-text-button);
+}
+.textButton[data-is-selected=false] {
+  color: var(--color-text-button);
+}
+.textButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-text-button-rgb), .75);
+  border-color: rgba(var(--color-text-button-rgb), .25);
 }
 
-.textButton[data-is-selected=false] {
-  color: #009688;
-}
 
 .novelButton {
-  border-color: #bf360c;
+  border-color: var(--color-novel-button);
 }
-
 .novelButton[data-is-selected=true] {
-  background-color: #bf360c;
+  background-color: var(--color-novel-button);
+}
+.novelButton[data-is-selected=false] {
+  color: var(--color-novel-button);
+}
+.novelButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-novel-button-rgb), .75);
+  border-color: rgba(var(--color-novel-button-rgb), .25);
 }
 
-.novelButton[data-is-selected=false] {
-  color: #bf360c;
+.musicButton {
+  border-color: var(--color-music-button);
+}
+.musicButton[data-is-selected=true] {
+  background-color: var(--color-music-button);
+}
+.musicButton[data-is-selected=false] {
+  color: var(--color-music-button);
+}
+.musicButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-music-button-rgb), .75);
+  border-color: rgba(var(--color-music-button-rgb), .25);
+}
+
+.streamButton {
+  border-color: var(--color-stream-button);
+}
+.streamButton[data-is-selected=true] {
+  background-color: var(--color-stream-button);
+}
+.streamButton[data-is-selected=false] {
+  color: var(--color-stream-button);
+}
+.streamButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-stream-button-rgb), .75);
+  border-color: rgba(var(--color-stream-button-rgb), .25);
 }
