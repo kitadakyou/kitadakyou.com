@@ -11,8 +11,8 @@ export default function GenreButton(props: Props) {
   const getClassName =  (): string => {
     if (props.type == 'all') {
       return styles.allButton
-    } else if(props.type == 'text') {
-      return styles.textButton
+    } else if(props.type == 'blog') {
+      return styles.blogButton
     } else if(props.type == 'novel') {
       return styles.novelButton
     } else if (props.type == 'music') {

@@ -42,18 +42,18 @@
 }
 
 
-.textButton {
-  border-color: var(--color-text-button);
+.blogButton {
+  border-color: var(--color-blog-button);
 }
-.textButton[data-is-selected=true] {
-  background-color: var(--color-text-button);
+.blogButton[data-is-selected=true] {
+  background-color: var(--color-blog-button);
 }
-.textButton[data-is-selected=false] {
-  color: var(--color-text-button);
+.blogButton[data-is-selected=false] {
+  color: var(--color-blog-button);
 }
-.textButton[data-is-selected=false]:hover {
-  background-color: rgba(var(--color-text-button-rgb), .75);
-  border-color: rgba(var(--color-text-button-rgb), .25);
+.blogButton[data-is-selected=false]:hover {
+  background-color: rgba(var(--color-blog-button-rgb), .75);
+  border-color: rgba(var(--color-blog-button-rgb), .25);
 }
 
 
