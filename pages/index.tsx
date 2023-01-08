@@ -1,10 +1,12 @@
-import Menu from '../components/menu'
+import GenreMenu from '../components/genreMenu'
 import styles from '../styles/components/index.module.css'
+import ContentsTable from '../components/contentsTable'
 
 export default function Index() {
   return (
-    <div className={styles.outer}>
-      <Menu />
-    </div>
+    <main className={styles.articles}>
+      <GenreMenu />
+      <ContentsTable />
+    </main>
     )
 }
