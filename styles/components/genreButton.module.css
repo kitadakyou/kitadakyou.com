@@ -20,9 +20,9 @@
 }
 .button[data-is-selected=false] {
   background-color: transparent;
-  transition: background-color .5s, color .5s border-color .5s;
+  transition: background-color .5s, color .5s, border-color .5s;
 }
-.button[data-is-selected=false]:hover {
+  .button[data-is-selected=false]:hover {
   color: #E0E3E7cd;
 }
 
