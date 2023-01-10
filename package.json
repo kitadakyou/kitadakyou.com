@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "autofix": "next lint --fix"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -20,5 +21,11 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.4",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1"
   }
 }

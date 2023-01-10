@@ -1,23 +1,27 @@
 import { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-export default function ContentTemplate(props: any) {
-  const [markdown, setMarkdown] = useState("")
+type Props = {
+  contentPath: string
+}
+
+export default function ContentTemplate (props: Props) {
+  const [markdown, setMarkdown] = useState('')
 
   useEffect(() => {
     const getMarkdown = async () => {
-      if (markdown !== "") {
+      if (markdown !== '') {
         return
       }
-      const res = await fetch('/blog/test.md')
+      const res = await fetch(props.contentPath)
       setMarkdown(await res.text())
     }
     getMarkdown()
   })
 
   return (
-    <div>
+    <article>
       <ReactMarkdown children={markdown} />
-    </div>
+    </article>
   )
 }
