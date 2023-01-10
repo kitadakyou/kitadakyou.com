@@ -9,15 +9,15 @@ type Props = {
 
 export default function GenreButton (props: Props) {
   const getClassName = (): string => {
-    if (props.type == 'all') {
+    if (props.type === 'all') {
       return styles.allButton
-    } else if (props.type == 'blog') {
+    } else if (props.type === 'blog') {
       return styles.blogButton
-    } else if (props.type == 'novel') {
+    } else if (props.type === 'novel') {
       return styles.novelButton
-    } else if (props.type == 'music') {
+    } else if (props.type === 'music') {
       return styles.musicButton
-    } else if (props.type == 'stream') {
+    } else if (props.type === 'stream') {
       return styles.streamButton
     }
     return ''
