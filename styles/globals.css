@@ -1,4 +1,7 @@
 :root {
+  --color-text: #E0E3E7;
+  --color-background: #0a1929;
+
   --color-all-button: #c62828;
   --color-all-button-rgb: 198, 40, 40;
 
@@ -15,11 +18,9 @@
   --color-stream-button-rgb: 25, 118, 210;
 }
 
-
-
 body {
-  background-color: #0a1929;
-  color: #E0E3E7;
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: '-apple-system','BlinkMacSystemFont','"Hiragino Kaku Gothic ProN"','"Hiragino Sans"','Meiryo','sans-serif';
 }
 
