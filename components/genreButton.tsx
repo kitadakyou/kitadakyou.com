@@ -7,13 +7,13 @@ type Props = {
   onClick: any
 }
 
-export default function GenreButton(props: Props) {
-  const getClassName =  (): string => {
+export default function GenreButton (props: Props) {
+  const getClassName = (): string => {
     if (props.type == 'all') {
       return styles.allButton
-    } else if(props.type == 'blog') {
+    } else if (props.type == 'blog') {
       return styles.blogButton
-    } else if(props.type == 'novel') {
+    } else if (props.type == 'novel') {
       return styles.novelButton
     } else if (props.type == 'music') {
       return styles.musicButton
@@ -23,7 +23,7 @@ export default function GenreButton(props: Props) {
     return ''
   }
 
-  const clickHandler = (e: any): void => {    
+  const clickHandler = (e: any): void => {
     props.onClick(e.target.dataset.type)
   }
 

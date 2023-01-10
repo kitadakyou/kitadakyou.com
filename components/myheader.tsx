@@ -1,9 +1,9 @@
-export default function MyHeader() {
+export default function MyHeader () {
   return (
-    <div className="myHeader">
+    <header className="myHeader">
       <h1 className="headerTitle">
         ここにタイトルを入力
       </h1>
-    </div>
+    </header>
   )
 }
