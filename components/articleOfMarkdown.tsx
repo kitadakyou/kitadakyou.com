@@ -5,19 +5,16 @@ type Props = {
   contentPath: string
 }
 
-export default function ContentTemplate (props: Props) {
+export default function ArticleOfMarkdown (props: Props) {
   const [markdown, setMarkdown] = useState('')
 
   useEffect(() => {
     const getMarkdown = async () => {
-      if (markdown !== '') {
-        return
-      }
       const res = await fetch(props.contentPath)
       setMarkdown(await res.text())
     }
     getMarkdown()
-  })
+  }, [])
 
   return (
     <article>
