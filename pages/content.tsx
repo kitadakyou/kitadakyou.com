@@ -1,9 +1,9 @@
-import ContentTemplate from "../components/conentTemplate";
+import ContentTemplate from '../components/conentTemplate'
 
-export default function Content() {
+export default function Content () {
   return (
-    <div>
-      <ContentTemplate />
-    </div>
+    <article>
+      <ContentTemplate contentPath="/blog/test.md" />
+    </article>
   )
 }
