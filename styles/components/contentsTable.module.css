@@ -18,3 +18,38 @@
   text-align: center;
   border-top: dashed;
 }
+
+.contentsTable tr {
+  cursor: pointer;
+}
+
+.contentsTable tr:hover {
+  text-decoration: underline;
+}
+
+.tableDataGenre {
+  border-style: solid;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tableDatablog {
+  border-color: var(--color-blog-button);
+  color: var(--color-blog-button);
+}
+
+.tableDatanovel {
+  border-color: var(--color-novel-button);
+  color: var(--color-novel-button);
+}
+
+.tableDatamusic {
+  border-color: var(--color-music-button);
+  color: var(--color-music-button);
+}
+
+.tableDatastream {
+  border-color: var(--color-stream-button);
+  color: var(--color-stream-button);
+}
