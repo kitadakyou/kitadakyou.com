@@ -1,18 +1,16 @@
+import { useState, useEffect } from 'react'
+import { ContentApi } from '../pages/api/contents'
 import styles from '../styles/components/contentsTable.module.css'
 
 export default function ContentsTable () {
-  const contents = [
-    {
-      id: 'c01',
-      date: '2023/1/1',
-      title: 'どうしてこの文章を書いているのか'
-    },
-    {
-      id: 'c02',
-      date: '2023/1/2',
-      title: 'どうしてこの文章を書いているのか'
-    }
-  ]
+  const [contents, setContents] = useState<ContentApi[]>([])
+  useEffect(() => {
+    fetch('/api/contents')
+      .then(res => res.json())
+      .then(data => {
+        setContents(data)
+      })
+  }, [])
   return (
     <section>
       <table className={styles.contentsTable}>
@@ -24,7 +22,7 @@ export default function ContentsTable () {
         </thead>
         <tbody>
           {contents.map(c =>
-            <tr className={styles.tableBodyRow} key={c.id}>
+            <tr className={styles.tableBodyRow} key={c.path}>
               <td>{c.date}</td>
               <td>{c.title}</td>
             </tr>
