@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
+import styles from '../styles/components/articleOfMarkdown.module.css'
 
 type Props = {
   contentPath: string
@@ -17,7 +18,7 @@ export default function ArticleOfMarkdown (props: Props) {
   }, [])
 
   return (
-    <article>
+    <article className={styles.article}>
       <ReactMarkdown children={markdown} />
     </article>
   )
