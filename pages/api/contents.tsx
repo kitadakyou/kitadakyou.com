@@ -10,22 +10,10 @@ export type ContentApi = {
 export default function Contents (req: NextApiRequest, res: NextApiResponse) {
   const contents: ContentApi[] = [
     {
-      path: '/blog/test1',
-      title: 'test title 1',
+      path: '/blog/review-of-as-internet',
+      title: '今さら『インターネット的』を読んだ話',
       date: new Date('2023-1-1').toLocaleDateString('ja-JP'),
       genre: 'blog'
-    },
-    {
-      path: '/blog/test2',
-      title: 'test title 2',
-      date: new Date('2023-1-10').toLocaleDateString('ja-JP'),
-      genre: 'blog'
-    },
-    {
-      path: '/blog/test3',
-      title: 'test title 3',
-      date: new Date('2023-1-15').toLocaleDateString('ja-JP'),
-      genre: 'novel'
     }
   ]
 
