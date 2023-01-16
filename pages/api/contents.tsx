@@ -11,8 +11,8 @@ export default function Contents (req: NextApiRequest, res: NextApiResponse) {
   const contents: ContentApi[] = [
     {
       path: '/blog/review-of-as-internet',
-      title: '今さら『インターネット的』を読んだ話',
-      date: new Date('2023-1-1').toLocaleDateString('ja-JP'),
+      title: '今さら『インターネット的』を読んで、今さら個人サイトを作った話',
+      date: new Date('2023-1-18').toLocaleDateString('ja-JP'),
       genre: 'blog'
     }
   ]
