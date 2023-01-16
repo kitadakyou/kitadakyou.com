@@ -37,7 +37,7 @@ export default function ContentsTable () {
         <thead className={styles.tableHeadRow}>
           <tr>
             <th>日付</th>
-            <th>ジャンル</th>
+            <th>種類</th>
             <th>タイトル</th>
           </tr>
         </thead>
