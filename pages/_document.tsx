@@ -2,9 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 import MyHeader from '../components/myheader'
 import Script from 'next/script'
 import React from 'react'
-import { measurementId } from '../libs/firebase'
 
 const GoogleAnalytics = () => {
+  const measurementId = 'G-WK4056L7VX'
   if (process.env.NODE_ENV === 'production') {
     return (
         <React.Fragment>

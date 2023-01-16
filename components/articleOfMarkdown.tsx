@@ -19,7 +19,7 @@ export default function ArticleOfMarkdown (props: Props) {
 
   return (
     <article className={styles.article}>
-      <ReactMarkdown children={markdown} />
+      <ReactMarkdown children={markdown} className="line-break" />
     </article>
   )
 }

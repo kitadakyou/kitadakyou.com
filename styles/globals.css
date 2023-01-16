@@ -59,3 +59,19 @@ a {
   margin-block-end: 0.83em;
   font-size: 1.2rem;
 }
+
+.line-break {
+  white-space: pre-line;
+}
+
+.line-break p,
+.line-break h1,
+.line-break h2,
+.line-break h3,
+.line-break h4 {
+  margin-block-end: 0;
+}
+
+.line-break p {
+  margin-block-start: 0;
+}
