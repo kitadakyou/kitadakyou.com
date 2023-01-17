@@ -4,7 +4,7 @@ import Script from 'next/script'
 import React from 'react'
 
 const GoogleAnalytics = () => {
-  const measurementId = 'G-WK4056L7VX'
+  const measurementId = 'G-973LF1LC2Q'
   if (process.env.NODE_ENV === 'production') {
     return (
         <React.Fragment>
