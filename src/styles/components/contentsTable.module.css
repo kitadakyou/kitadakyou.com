@@ -5,6 +5,7 @@
   border-collapse: collapse;
   border-color: #E0E3E7;
   border-bottom: dashed;
+  margin-bottom: 3rem;
 }
 
 .contentsTable th,
@@ -32,6 +33,7 @@
   border-radius: 50%;
   padding: 0.5rem;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .tableDatablog {
@@ -52,4 +54,49 @@
 .tableDatastream {
   border-color: var(--color-stream-button);
   color: var(--color-stream-button);
+}
+
+@media screen and (max-width: 1000px) {
+  .contentsTable {
+    font-size: 1.2rem;
+  }  
+}
+
+@media screen and (max-width: 900px) {
+  .contentsTable {
+    font-size: 1.1rem;
+  }  
+  .contentsTable th,
+  .contentsTable td {
+    height: 4rem;
+  }
+  .tableDataGenre {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contentsTable {
+    font-size: 1rem;
+  }  
+  .tableDataGenre {
+    padding: 0.5rem;
+    font-size: .75rem;
+  }}
+
+@media screen and (max-width: 700px) {
+  .contentsTable {
+    font-size: .9rem;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .contentsTable {
+    font-size: .8rem;
+  }  
+  .tableDataGenre {
+    padding: 0.5rem;
+    font-size: .75rem;
+  }
 }
