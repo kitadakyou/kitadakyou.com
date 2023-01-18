@@ -1,18 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router'
-import { ContentApi } from '../pages/api/contents'
 import styles from '../styles/components/contentsTable.module.css'
+
+type ContentApi = {
+  path: string,
+  title: string,
+  date: string,
+  genre: 'blog' | 'novel' | 'music' | 'stream'
+}
 
 export default function ContentsTable () {
   const router = useRouter()
-  const [contents, setContents] = useState<ContentApi[]>([])
-  useEffect(() => {
-    fetch('/api/contents')
-      .then(res => res.json())
-      .then(data => {
-        setContents(data)
-      })
-  }, [])
+  const contents: ContentApi[] = [
+    {
+      path: '/blog/review-of-as-internet',
+      title: '今さら『インターネット的』を読んで、個人サイトを作った話',
+      date: new Date('2023-1-18').toLocaleDateString('ja-JP'),
+      genre: 'blog'
+    }
+  ]
   const routerPush = (event: React.MouseEvent<HTMLTableRowElement, MouseEvent>) => {
     router.push(event.currentTarget.dataset.path!)
   }
