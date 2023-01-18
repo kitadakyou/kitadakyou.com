@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import MyHeader from '../components/myheader'
 
 export default function Document () {
   return (
@@ -10,7 +9,6 @@ export default function Document () {
       </Head>
       <body>
         <div className='container'>
-          <MyHeader />
           <Main />
         </div>
         <NextScript />

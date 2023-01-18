@@ -1,10 +1,16 @@
+import MyHeader from '../components/myheader'
+import MyFooter from 'components/myFooter'
 import { ReactNode } from 'react'
-import styles from '../styles/components/layout.module.css'
+// import styles from '../styles/components/layout.module.css'
 
-export default function Layout ({ children }: { children: ReactNode }) {
+export default function LayoutContent ({ children }: { children: ReactNode }) {
   return (
-    <main className={styles.main}>
-      {children}
-    </main>
+    <>
+      <MyHeader />
+        <main>
+          {children}
+        </main>
+      <MyFooter />
+    </>
   )
 }

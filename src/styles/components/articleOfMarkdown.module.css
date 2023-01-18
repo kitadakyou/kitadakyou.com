@@ -20,6 +20,19 @@
 
 .article h1 {
   text-decoration: underline;
-  text-underline-offset: .5rem;
-  font-size: 2rem;
+  text-underline-offset: .5em;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .article {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .article {
+    max-width: 90%;
+    font-size: .9rem;
+  }
 }
