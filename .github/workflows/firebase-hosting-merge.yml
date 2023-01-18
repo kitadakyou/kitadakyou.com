@@ -14,8 +14,9 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KITADAKYOU_BLOG }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LOCAL_CIRCUIT_159306 }}'
           channelId: live
-          projectId: kitadakyou-blog
+          projectId: kitadakyou
+          firebaseToolsVersion : 11.13.0
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
