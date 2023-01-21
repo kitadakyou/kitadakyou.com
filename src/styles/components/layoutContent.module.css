@@ -11,6 +11,10 @@
   white-space: pre-line;
 }
 
+.article a {
+  text-decoration: underline;
+}
+
 .article p,
 .article h1,
 .article h2,
