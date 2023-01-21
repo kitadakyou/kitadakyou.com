@@ -19,3 +19,26 @@
     font-size: .9rem;
   }
 }
+
+.article h1 {
+  font-size: 2rem;
+}
+
+.twitterButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+  border-style: solid;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color .2s, color .5s, color .2s;
+}
+
+.twitterButton:hover {
+  color: #1a8cd8;
+  border-color: #1a8cd8;
+  transition: border-color .2s, color .5s, color .2s;
+}
