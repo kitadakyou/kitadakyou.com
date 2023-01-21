@@ -14,7 +14,7 @@ export default function ContentsTable () {
   const contents: ContentApi[] = [
     {
       path: '/blog/review-of-as-internet',
-      title: '今さら『インターネット的』を読んで、個人サイトを作った話',
+      title: '今さら20年前の本を読んで、個人サイトを作った話',
       date: new Date('2023-1-18').toLocaleDateString('ja-JP'),
       genre: 'blog'
     }
