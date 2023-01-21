@@ -7,7 +7,8 @@ export default function Index () {
     <section className={styles.articles}>
       <Head>
         <title>KITADAKYOU.COM</title>
-        <meta name="description" content="北田共による個人サイト。記事や制作物に関する発表など。" />
+        <meta property="og:title" content="KITADAKYOU.COM - 北田共の個人サイト" />
+        <meta property="og:url" content="https://kitadakyou.com" />
       </Head>
       {// <GenreMenu />
       }
