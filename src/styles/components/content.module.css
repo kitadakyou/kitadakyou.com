@@ -12,13 +12,13 @@
   border-style: solid;
   font-size: 1rem;
   cursor: pointer;
-  transition: border-color .2s, color .5s, color .2s;
+  transition: border-color .2s, background-color .2s;
 }
 
 .twitterButton:hover {
-  color: var(--color-twitter-hover);
+  background-color: var(--color-twitter-hover);
   border-color: var(--color-twitter-hover);
-  transition: border-color .2s, color .5s, color .2s;
+  transition: border-color .2s, background-color .2s;
 }
 
 .twitterButton span {

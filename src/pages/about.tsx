@@ -8,6 +8,8 @@ export default function About () {
     <section className={styles.mainContainer}>
       <Head>
         <title>北田共について - KITADAKYOU.COM</title>
+        <meta property="og:title" content="著者来歴" />
+        <meta property="og:url" content="https://kitadakyou.com/about" />
       </Head>
       <article className={styles.article}>
         <h1>北田共</h1>
