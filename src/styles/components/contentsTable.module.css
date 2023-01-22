@@ -20,11 +20,11 @@
   border-top: dashed;
 }
 
-.contentsTable tr {
+.contentsTable tbody tr {
   cursor: pointer;
 }
 
-.contentsTable tr:hover {
+.contentsTable tbody tr:hover {
   text-decoration: underline;
 }
 

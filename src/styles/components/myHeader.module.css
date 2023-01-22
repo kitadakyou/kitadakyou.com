@@ -27,6 +27,8 @@
 
 .headerMenu {
   padding-right: 1.5rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .headerMenu a {
