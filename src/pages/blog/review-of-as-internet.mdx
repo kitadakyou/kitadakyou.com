@@ -1,14 +1,4 @@
 import LayoutContent from '../../components/layoutContent'
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../../styles/components/content.module.css'
-
-<Head>
-  <title>今さら20年前の本を読んで、個人サイトを作った話 - KITADAKYOU.COM</title>
-  <meta property="og:title" content="今さら20年前の本を読んで、個人サイトを作った話" />
-  <meta property="og:url" content="https://kitadakyou.com/blog/review-of-as-internet" />
-</Head>
 
 # 今さら20年前の本を読んで、個人サイトを作った話
 
@@ -403,8 +393,4 @@ CSSフレームワークも必要ないレベルで、簡単にレイアウト�
 昔は本を買うしかなかったHTMLの書き方も、Web上に充実したドキュメントが無償で提供されています。
 Web の世界は「シェア」で満ちています。
 
-<section className={styles.shareSection}>
-  <Link href='https://twitter.com/intent/tweet?text=今さら20年前の本を読んで、個人サイトを作った話%20https%3A%2F%2Fkitadakyou.com%2Fblog%2Freview-of-as-internet%20%23北田共のブログ'><button className={styles.twitterButton}><span><Image src='/img/twitter-icon-white.svg' alt='twitter icon' width={25} height={25} /></span>Twitterでシェアする</button></Link>
-</section>
-
-export default ({children}) => <LayoutContent>{children}</LayoutContent>
+export default ({children}) => <LayoutContent title='今さら20年前の本を読んで、個人サイトを作った話' path='review-of-as-internet'>{children}</LayoutContent>
