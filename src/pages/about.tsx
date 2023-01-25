@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/page/about.module.css'
 import Image from 'next/image'
 
@@ -22,11 +21,11 @@ export default function About () {
         <p>堅い話が大の苦手なのに、医療系ベンチャーの立ち上げに関わったり、運動を全くやらないのに運動科学系ベンチャーの立ち上げに関わったりする。</p>
         {/* <p>現在、株式会社怪物の代表取締役社長。</p> */}
         <h2>リンク</h2>
-        <Link href='https://twitter.com/kitadakyou_n'>
+        <a href='https://twitter.com/kitadakyou_n' target="_blank" rel="noopener noreferrer">
           <button className={styles.twitterButton}>
             <span><Image src='/img/twitter-icon.svg' alt='twitter icon' width={25} height={25} /></span>Twitter
           </button>
-        </Link>
+        </a>
       </article>
     </section>
   )
