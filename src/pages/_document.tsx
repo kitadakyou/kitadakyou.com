@@ -8,9 +8,7 @@ export default function Document () {
         <link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
       </Head>
       <body>
-        <div className='container'>
-          <Main />
-        </div>
+        <Main />
         <NextScript />
       </body>
     </Html>

@@ -19,6 +19,9 @@
 
   --color-twitter: #1d9bf0;
   --color-twitter-hover: #1a8cd8;
+
+  --color-email: #bdbdbd;
+  --color-email-hover: #11253b;
 }
 
 body {
@@ -30,16 +33,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
 }
