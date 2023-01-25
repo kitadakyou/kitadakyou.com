@@ -8,6 +8,7 @@ export default function App ({ Component, pageProps }: AppProps) {
   return (
     <>
     <Head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="プログラマー兼社長である北田共が本職とは関係のない記事や物語、音楽などを発信するサイトです。" />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="KITADAKYOU.COM" />
