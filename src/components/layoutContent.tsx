@@ -4,13 +4,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function LayoutContent ({ children, title, path }: { children: ReactNode, title: string, path: string }) {
+export default function LayoutContent ({ children, title, path, image }: { children: ReactNode, title: string, path: string, image?: string }) {
   return (
     <>
       <Head>
         <title>{`${title} - KITADAKYOU.COM`}</title>
         <meta property="og:title" content={title} />
         <meta property="og:url" content={`https://kitadakyou.com/blog/${path}`} />
+        { image ? <meta property="og:image" content={image} /> : ''}
       </Head>
       <main className={styles.main}>
         <article className={styles.article}>
