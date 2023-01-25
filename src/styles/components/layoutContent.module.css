@@ -46,7 +46,11 @@
 .linkSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 50%;
+  width: 50%;
+}
+
+.linkSection a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
@@ -54,7 +58,7 @@
     max-width: 75%;
   }
   .linkSection {
-    max-width: 75%;
+    width: 75%;
   }
 }
 
@@ -64,7 +68,7 @@
     font-size: .9rem;
   }
   .linkSection {
-    max-width: 90%;
+    width: 90%;
     font-size: .9rem;
   }
 }
