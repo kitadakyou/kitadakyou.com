@@ -37,6 +37,12 @@
   margin-top: 0;
 }
 
+.article pre {
+  border-style: solid;
+  border-color: white;
+  padding: 1.5em;
+}
+
 @media screen and (max-width: 900px) {
   .article {
     max-width: 75%;

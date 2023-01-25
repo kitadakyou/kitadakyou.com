@@ -13,11 +13,18 @@ export default function ContentsTable () {
   const router = useRouter()
   const contents: ContentApi[] = [
     {
+      path: '/blog/chatgpt-described-pasta-that-does-not-exist',
+      title: 'ChatGPTにレシピを訊いたら架空のパスタ「フォルグッティ」を教えられた話',
+      date: new Date('2023-1-25').toLocaleDateString('ja-JP'),
+      genre: 'blog'
+    },
+    {
       path: '/blog/review-of-as-internet',
       title: '今さら20年前の本を読んで、個人サイトを作った話',
       date: new Date('2023-1-18').toLocaleDateString('ja-JP'),
       genre: 'blog'
     }
+
   ]
   const routerPush = (event: React.MouseEvent<HTMLTableRowElement, MouseEvent>) => {
     router.push(event.currentTarget.dataset.path!)
