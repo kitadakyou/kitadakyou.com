@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-
-const withMDX = require('@next/mdx')({
+import withMDXModule from '@next/mdx'
+const withMDX = withMDXModule({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
@@ -13,8 +13,9 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: './.next',
   experimental: {
-    runtime: 'experimental-edge'
+    runtime: 'experimental-edge',
+    esmExternals: true
   }
 }
 
-module.exports = withMDX(nextConfig)
+export default withMDX(nextConfig)
