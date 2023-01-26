@@ -9,7 +9,7 @@ export const contents: ContentApi[] = [
   {
     path: '/blog/singer-songwriter-comedian',
     title: '芸人総シンガーソングライター化現象',
-    date: new Date('2023-2-2').toLocaleDateString('ja-JP'),
+    date: new Date('2023-1-28').toLocaleDateString('ja-JP'),
     genre: 'blog'
   },
   {
