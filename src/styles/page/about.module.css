@@ -1,6 +1,12 @@
 .mainContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.linkSection {
+  width: 50%;
 }
 
 .article {
@@ -11,6 +17,9 @@
   .article {
     max-width: 75%;
   }
+  .linkSection {
+    width: 75%;
+  }  
 }
 
 @media screen and (max-width: 750px) {
@@ -18,32 +27,47 @@
     max-width: 90%;
     font-size: .9rem;
   }
+  .linkSection {
+    width: 90%;
+  }
 }
 
 .article h1 {
   font-size: 2rem;
 }
 
-.twitterButton {
+.linkButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.linkButtons button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
-  color: var(--color-twitter);
-  border-color: var(--color-twitter);
   border-style: solid;
   font-size: 1rem;
   cursor: pointer;
-  transition: border-color .2s, color .5s, color .2s;
+  transition: background-color .2s;
 }
 
-.twitterButton:hover {
-  color: var(--color-twitter-hover);
-  border-color: var(--color-twitter-hover);
-  transition: border-color .2s, color .5s, color .2s;
+.linkButtons button:hover {
+  background-color: var(--color-email-hover);
+  transition: background-color .2s;
 }
 
-.twitterButton span {
+.linkButtons button span {
   margin-left: 0.2em;
   margin-right: 0.35em;
+}
+
+.twitterButton {
+  color: var(--color-twitter);
+  border-color: var(--color-twitter);
+}
+
+.emailButton {
+  color: var(--color-email);
+  border-color: var(--color-email);
 }
