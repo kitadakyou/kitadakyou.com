@@ -8,14 +8,15 @@
     "start": "next start",
     "export": "next build && next export",
     "lint": "next lint",
-    "autofix": "next lint --fix"
+    "autofix": "next lint --fix",
+    "ts-esm": "node --loader ts-node/esm"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/font": "13.1.4",
     "@next/mdx": "^13.1.4",
-    "@types/node": "18.11.18",
+    "@types/node": "^18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "eslint": "8.32.0",
@@ -23,13 +24,14 @@
     "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.4"
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-node": "^10.9.1"
   },
   "engines": {
     "node": "16"
