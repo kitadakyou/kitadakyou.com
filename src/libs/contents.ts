@@ -7,6 +7,12 @@ type ContentApi = {
 
 export const contents: ContentApi[] = [
   {
+    path: '/blog/singer-songwriter-comedian',
+    title: '芸人総シンガーソングライター化現象',
+    date: new Date('2023-2-2').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
+  {
     path: '/blog/chatgpt-described-pasta-that-does-not-exist',
     title: 'ChatGPTにレシピを訊いたら架空のパスタ「フォルグッティ」を教えられた話',
     date: new Date('2023-1-25').toLocaleDateString('ja-JP'),
