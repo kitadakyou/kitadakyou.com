@@ -8,10 +8,12 @@ const contentUrls = contents.map((c) => {
   return `<url>
   <loc>https://kitadakyou.com${c.path}</loc>
   <lastmod>${toW3cDatetime(new Date(c.date))}</lastmod>
-</url>`
-})
+</url>
+`
+}
+).reduce((acc, current) => current + acc)
 
-const sitemap = `<xml version="1.0" encoding="UTF-8">
+const sitemap = `<?xml version="1.0" encoding="UTF-8">
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kitadakyou.com</loc>
@@ -23,7 +25,6 @@ const sitemap = `<xml version="1.0" encoding="UTF-8">
   </url>
   ${contentUrls}
 </urlset>
-</xml>
 `
 
 fs.writeFile('./public/sitemap.xml', sitemap, err => {
