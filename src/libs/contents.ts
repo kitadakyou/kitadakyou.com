@@ -7,6 +7,12 @@ type ContentApi = {
 
 export const contents: ContentApi[] = [
   {
+    path: '/blog/80s-jrpg-hero-always-forced-make-his-own-desicion',
+    title: '80年代のRPGは自発的な行動を求められる',
+    date: new Date('2023-2-1').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
+  {
     path: '/blog/singer-songwriter-comedian',
     title: '芸人総シンガーソングライター化現象',
     date: new Date('2023-1-28').toLocaleDateString('ja-JP'),
