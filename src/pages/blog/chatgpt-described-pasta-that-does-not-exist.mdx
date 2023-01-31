@@ -1,4 +1,12 @@
+import Image from 'next/image'
 import LayoutContent from '../../components/layoutContent'
+import chatgptImage from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/2095f066-6ba5-41b6-b9de-c7dec675e7ca.webp'
+import chatgptImage2 from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/4ce8ce44-8f50-4c61-97a7-2629a3e8f910.webp'
+import googleImage from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/9b4a7e1c-438d-4ced-9caf-08bc8225b6f1.webp'
+import twitterImage from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/a260e1e9-02a7-45e9-bb43-931dcfca6edf.webp'
+import twitterImage2 from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/5484ed80-7295-4ab5-b6af-b041ef161451.webp'
+import amazonImage from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/abb46fd2-b023-42ad-a83a-eb2506aa7a0a.webp'
+import deeplImage from '../../../public/img/blog/chatgpt-described-pasta-that-does-not-exist/bd6bcff5-9269-4947-97f0-bd85151233e5.webp'
 
 # ChatGPTにレシピを訊いたら架空のパスタ「フォルグッティ」を教えられた話
 
@@ -48,7 +56,7 @@ ChatGPTをアシスタントとして有効活用する例が多数挙がって�
 7. 料理ができ上がったら、すぐに皿に盛り、食べる。
 ```
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/2095f066-6ba5-41b6-b9de-c7dec675e7ca.webp" alt="ChatGPTのスクリーンショット" title="ChatGPTによるフォルグッティの説明" width="315" /> 
+<Image src={chatgptImage} alt="ChatGPTのスクリーンショット" title="ChatGPTによるフォルグッティの説明" width="315" /> 
 　
 **フォルグッティ** とは・・・？ 
 
@@ -58,7 +66,7 @@ ChatGPTをアシスタントとして有効活用する例が多数挙がって�
 フォルグッティもそのような、私の知らないパスタなのでしょう。
 「フォルグッティとは何ですか？」と質問してみました。
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/4ce8ce44-8f50-4c61-97a7-2629a3e8f910.webp" alt="ChatGPTのスクリーンショット" title="ChatGPTによるフォルグッティの説明" width="340" /> 
+<Image src={chatgptImage2} alt="ChatGPTのスクリーンショット" title="ChatGPTによるフォルグッティの説明" width="340" /> 
 
 ```
 フォルグッティは、イタリア料理におけるパスタの一種で、細長い形をしています。
@@ -70,7 +78,7 @@ ChatGPTをアシスタントとして有効活用する例が多数挙がって�
 本当にあるっぽいです。
 念のためGoogleで検索してみました。
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/9b4a7e1c-438d-4ced-9caf-08bc8225b6f1.webp" alt="Google検索の結果" title="フォルグッティをGoogleで検索" width="600" /> 
+<Image src={googleImage} alt="Google検索の結果" title="フォルグッティをGoogleで検索" width="600" /> 
 　
 
 **ないじゃん。**
@@ -89,8 +97,8 @@ ChatGPT が世界中のデータを所有している全知全能の神である
 [アカデミックな世界でもこんな方](https://twitter.com/sasakitakanori/status/1614206426326634496)が居ました。
 以下、スクリーンショットです。
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/a260e1e9-02a7-45e9-bb43-931dcfca6edf.webp" alt="Twitterのスクリーンショット" title="ChatGPTを指導教官にした人" width="450" /> 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/5484ed80-7295-4ab5-b6af-b041ef161451.webp" alt="Twitterのスクリーンショット" title="ChatGPTを指導教官にした人" width="450" /> 
+<Image src={twitterImage} alt="Twitterのスクリーンショット" title="ChatGPTを指導教官にした人" width="450" /> 
+<Image src={twitterImage2} alt="Twitterのスクリーンショット" title="ChatGPTを指導教官にした人" width="450" /> 
 　
 きっと、この方のように発信していないだけで、
 同じことをした人は何十人も居ると思います。
@@ -315,7 +323,7 @@ Prolog の知識とルールだけで表現できるほど、
 別のアプローチを取った技術もあります。
 アマゾンでこんな画面を見たことがあると思います。
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/abb46fd2-b023-42ad-a83a-eb2506aa7a0a.webp" alt="Amazon.co.jpのスクリーンショット" title="この商品をチェックした人はこんな商品もチェックしています" width="450" /> 
+<Image src={amazonImage} alt="Amazon.co.jpのスクリーンショット" title="この商品をチェックした人はこんな商品もチェックしています" width="450" /> 
 　
 これは人力でやっている訳ではなく、
 Amazonの持つアクセスデータから自動生成しています。
@@ -347,7 +355,7 @@ ChatGPTもやっていることの本質はこれと同じです。
 というものがあります。
 このとき、DeepLは**元文章に書かれていないことを、勝手に追加して翻訳しています。**
 
-<img src="/img/blog/chatgpt-described-pasta-that-does-not-exist/bd6bcff5-9269-4947-97f0-bd85151233e5.webp" alt="DeepLのスクリーンショット" title="先走って翻訳するDeepL" width="550" /> 
+<Image src={deeplImage} alt="DeepLのスクリーンショット" title="先走って翻訳するDeepL" width="550" /> 
 　
 これは、学習データの大半で「このような先行研究の潮流を受けて」まで書かれているものは「我々はこの機能を開発しました」まで含まれていたため、
 勝手に解釈をして表示してしまったものと考えられます。
