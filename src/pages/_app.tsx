@@ -14,7 +14,6 @@ export default function App ({ Component, pageProps }: AppProps) {
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="KITADAKYOU.COM" />
       <meta property="og:description" content="プログラマー兼社長である北田共が本職とは関係のない記事や物語、音楽などを発信するサイトです。" />
-      <meta property="og:image" content="https://kitadakyou.com/img/og-image-default.png" />
       <meta name="twitter:card" content="summary" />
     </Head>
       <MyHeader />
