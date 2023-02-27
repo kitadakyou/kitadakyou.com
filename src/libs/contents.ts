@@ -6,6 +6,18 @@ type ContentApi = {
 }
 
 export const contents: ContentApi[] = [
+//  {
+//    path: '/blog/i-want-netflix-real-store',
+//    title: 'Netflixの実店舗が欲しい',
+//    date: new Date('2023-2-10').toLocaleDateString('ja-JP'),
+//    genre: 'blog'
+//  },
+  {
+    path: '/blog/my-blow-up-theory',
+    title: '炎上という言葉のハードルが下がりすぎている',
+    date: new Date('2023-2-28').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
   {
     path: '/blog/80s-jrpg-hero-always-forced-make-his-own-desicion',
     title: '80年代のRPGは自発的な行動を求められる',
