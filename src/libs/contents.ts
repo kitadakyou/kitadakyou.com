@@ -6,10 +6,16 @@ type ContentApi = {
 }
 
 export const contents: ContentApi[] = [
+//  {
+//    path: '/blog/i-want-netflix-real-store',
+//    title: 'Netflixの実店舗が欲しい',
+//    date: new Date('2023-2-10').toLocaleDateString('ja-JP'),
+//    genre: 'blog'
+//  },
   {
-    path: '/blog/digital-go-jp-uses-nextjs',
-    title: 'デジタル庁がNuxt.jsからNext.jsに乗り替えている件について',
-    date: new Date('2023-2-8').toLocaleDateString('ja-JP'),
+    path: '/blog/my-blow-up-theory',
+    title: '炎上という言葉のハードルが下がりすぎている',
+    date: new Date('2023-2-28').toLocaleDateString('ja-JP'),
     genre: 'blog'
   },
   {
