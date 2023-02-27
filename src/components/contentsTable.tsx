@@ -11,7 +11,7 @@ export default function ContentsTable () {
   const genreToJp = (genreName: string) => {
     switch (genreName) {
       case 'blog':
-        return 'ブログ'
+        return '雑記'
       case 'novel':
         return '小説'
       case 'music':
