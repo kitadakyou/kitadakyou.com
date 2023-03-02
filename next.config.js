@@ -11,11 +11,7 @@ const withMDX = withMDXModule({
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
-  distDir: './.next',
-  experimental: {
-    runtime: 'experimental-edge',
-    esmExternals: true
-  }
+  distDir: './.next'
 }
 
 export default withMDX(nextConfig)
