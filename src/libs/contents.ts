@@ -12,13 +12,19 @@ export const contents: ContentApi[] = [
 //    date: new Date('2023-2-10').toLocaleDateString('ja-JP'),
 //    genre: 'blog'
 //  },
-{
-  path: '/blog/nhk-programs-are-so-unique-compare-to-commercial-broadcasts',
-  title: 'NHK番組の異質さ',
-  date: new Date('2023-9-15').toLocaleDateString('ja-JP'),
-  genre: 'blog'
-},
-{
+  {
+    path: '/blog/how-to-create-games-for-an-age-of-entertainment',
+    title: 'ピクミン4とタイパ時代のゲーム作り',
+    date: new Date('2023-10-01').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
+  {
+    path: '/blog/nhk-programs-are-so-unique-compare-to-commercial-broadcasts',
+    title: 'NHK番組の異質さ',
+    date: new Date('2023-9-15').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
+  {
     path: '/blog/my-blow-up-theory',
     title: '炎上という言葉のハードルが下がりすぎている',
     date: new Date('2023-2-28').toLocaleDateString('ja-JP'),
