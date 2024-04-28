@@ -13,18 +13,18 @@ export const contents: ContentApi[] = [
 //    genre: 'blog'
 //  },
   {
+    path: '/blog/the-drug-that-said-nightmares-as-side-effect',
+    title: '副作用に「悪夢」と書いてある薬を飲んだら、ちゃんと悪夢を見た話',
+    date: new Date('2024-4-28').toLocaleDateString('ja-JP'),
+    genre: 'blog'
+  },
+  {
     path: '/blog/how-to-create-games-for-an-age-of-entertainment',
     title: 'ピクミン4とタイパ時代のゲーム作り',
     date: new Date('2023-10-01').toLocaleDateString('ja-JP'),
     genre: 'blog'
   },
   {
-  path: '/blog/the-drug-that-said-nightmares-as-side-effect',
-  title: '副作用に「悪夢」と書いてある薬を飲んだら、ちゃんと悪夢を見た話',
-  date: new Date('2024-4-28').toLocaleDateString('ja-JP'),
-  genre: 'blog'
-},
-{
     path: '/blog/nhk-programs-are-so-unique-compare-to-commercial-broadcasts',
     title: 'NHK番組の異質さ',
     date: new Date('2023-9-15').toLocaleDateString('ja-JP'),
