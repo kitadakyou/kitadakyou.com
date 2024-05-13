@@ -12,6 +12,12 @@ export const contents: ContentApi[] = [
 //    date: new Date('2023-2-10').toLocaleDateString('ja-JP'),
 //    genre: 'blog'
 //  },
+{
+  path: '/blog/afterwards-of-in-the-rain',
+  title: 'あとがき 『イン・ザ・レイン』',
+  date: new Date('2024-5-14').toLocaleDateString('ja-JP'),
+  genre: 'novel'
+},
   {
     path: '/blog/the-drug-that-said-nightmares-as-side-effect',
     title: '副作用に「悪夢」と書いてある薬を飲んだら、ちゃんと悪夢を見た話',
