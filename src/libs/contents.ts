@@ -13,6 +13,12 @@ export const contents: ContentApi[] = [
 //    genre: 'blog'
 //  },
 {
+  path: '/blog/went-to-a-medical-checkup-2',
+  title: '人間ドックに行ってきた話(後編)',
+  date: new Date('2024-8-12').toLocaleDateString('ja-JP'),
+  genre: 'blog'
+},
+{
   path: '/blog/went-to-a-medical-checkup-1',
   title: '人間ドックに行ってきた話(前編)',
   date: new Date('2024-8-11').toLocaleDateString('ja-JP'),
