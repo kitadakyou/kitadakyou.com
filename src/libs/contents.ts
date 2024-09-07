@@ -13,6 +13,12 @@ export const contents: ContentApi[] = [
 //    genre: 'blog'
 //  },
 {
+  path: '/blog/fan-fiction-of-emio',
+  title: '『ファミコン探偵俱楽部 笑み男』の畳み方について二次創作してみた',
+  date: new Date('2024-9-08').toLocaleDateString('ja-JP'),
+  genre: 'blog'
+},
+{
   path: '/blog/went-to-a-medical-checkup-2',
   title: '人間ドックに行ってきた話(後編)',
   date: new Date('2024-8-12').toLocaleDateString('ja-JP'),
