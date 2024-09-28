@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react'
 import GenreButton from './genreButton'
-import styles from '../styles/components/menu.module.css'
+import styles from './menu.module.css'
 
 export default function GenreMenu () {
   const [selected, setSelected] = useState('')

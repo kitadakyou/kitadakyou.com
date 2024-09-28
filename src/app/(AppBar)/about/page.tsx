@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/page/about.module.css'
+import styles from './about.module.css'
 import Image from 'next/image'
 
 export default function About () {

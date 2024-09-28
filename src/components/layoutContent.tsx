@@ -3,7 +3,7 @@ import styles from '../styles/components/layoutContent.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import { contents } from '../libs/contents'
+import { contents } from '../app/(AppBar)/contents'
 
 export default function LayoutContent ({ children, title, path, image }: { children: ReactNode, title: string, path: string, image?: string }) {
   const getOtherContentLink = () => {
