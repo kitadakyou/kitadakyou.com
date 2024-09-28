@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
-import { useRouter } from 'next/router'
-import styles from '../styles/components/contentsTable.module.css'
-import { contents } from 'libs/contents'
+import { useRouter } from 'next/navigation'
+import styles from './contentsTable.module.css'
+import { contents } from 'app/(AppBar)/contents'
 
 export default function ContentsTable () {
   const router = useRouter()

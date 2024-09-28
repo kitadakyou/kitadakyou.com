@@ -1,4 +1,4 @@
-import styles from '../styles/components/genreButton.module.css'
+import styles from './genreButton.module.css'
 
 type Props = {
   text: string,

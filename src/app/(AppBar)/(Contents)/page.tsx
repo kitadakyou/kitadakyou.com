@@ -1,5 +1,5 @@
-import styles from '../styles/components/index.module.css'
-import ContentsTable from '../components/contentsTable'
+import styles from './index.module.css'
+import ContentsTable from './contentsTable'
 import Head from 'next/head'
 
 export default function Index () {
