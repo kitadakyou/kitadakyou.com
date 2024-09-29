@@ -1,16 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-import withMDXModule from '@next/mdx'
+import createMDX from '@next/mdx'
 
-const withMDX = withMDXModule({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: []
-  }
+const withMDX = createMDX({
 })
 
 const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   experimental: {
     ppr: 'incremental',
   },

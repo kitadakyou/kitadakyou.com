@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './contentsTable.module.css'
-import { contents } from 'app/(AppBar)/contents'
+import { contents } from 'app/(AppBar)/(Contents)/contents'
 
 export default function ContentsTable () {
   const router = useRouter()
