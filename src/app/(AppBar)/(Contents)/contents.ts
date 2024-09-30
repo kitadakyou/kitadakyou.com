@@ -13,6 +13,12 @@ export const contents: ContentApi[] = [
 //    genre: 'blog'
 //  },
 {
+  path: '/blog/narrowing-the-field-of-vision',
+  title: 'たまには狭い画面で仕事をするのもいい',
+  date: new Date('2024-9-30'),
+  genre: 'blog'
+},
+{
   path: '/blog/fan-fiction-of-emio',
   title: '『ファミコン探偵俱楽部 笑み男』の畳み方について二次創作してみた',
   date: new Date('2024-9-08'),
