@@ -37,7 +37,7 @@ export default function ContentsTable () {
         <tbody>
           {contents.map(c =>
             <tr onClick={routerPush} className={styles.tableBodyRow} key={c.path} data-path={c.path}>
-              <td>{c.date}</td>
+              <td>{c.date.toLocaleDateString('ja-JP')}</td>
               <td><span className={`${styles.tableDataGenre} ${genreTdClassName(c.genre)}`}>{genreToJp(c.genre)}</span></td>
               <td>{c.title}</td>
             </tr>
