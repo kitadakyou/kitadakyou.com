@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://kitadakyou.com',
       lastModified: contents[0].date,
       changeFrequency: 'weekly' as const,
-      priority: 1.5
+      priority: 0.8,
     },
     {
       url: 'https://kitadakyou.com/about',
