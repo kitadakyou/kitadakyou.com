@@ -2,7 +2,7 @@ type ContentApi = {
   path: string,
   title: string,
   date: Date,
-  genre: 'blog' | 'novel' | 'music' | 'stream'
+  genre: 'blog' | 'novel' | 'music' | 'article'
 }
 
 export const contents: ContentApi[] = [
@@ -13,16 +13,21 @@ export const contents: ContentApi[] = [
 //    genre: 'blog'
 //  },
 {
+  path: '/blog/oat-milk-coffee',
+  title: 'オーツミルクコーヒー',
+  date: new Date('2025-02-08'),
+  genre: 'blog'
+},{
   path: '/blog/narrowing-the-field-of-vision',
   title: 'たまには狭い画面で仕事をするのもいい',
   date: new Date('2024-9-30'),
-  genre: 'blog'
+  genre: 'article'
 },
 {
   path: '/blog/fan-fiction-of-emio',
   title: '『ファミコン探偵俱楽部 笑み男』の畳み方について二次創作してみた',
   date: new Date('2024-9-08'),
-  genre: 'blog'
+  genre: 'article'
 },
 {
   path: '/blog/went-to-a-medical-checkup-2',
@@ -52,42 +57,42 @@ export const contents: ContentApi[] = [
     path: '/blog/how-to-create-games-for-an-age-of-entertainment',
     title: 'ピクミン4とタイパ時代のゲーム作り',
     date: new Date('2023-10-01'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/nhk-programs-are-so-unique-compare-to-commercial-broadcasts',
     title: 'NHK番組の異質さ',
     date: new Date('2023-9-15'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/my-blow-up-theory',
     title: '炎上という言葉のハードルが下がりすぎている',
     date: new Date('2023-2-28'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/80s-jrpg-hero-always-forced-make-his-own-desicion',
     title: '80年代のRPGは自発的な行動を求められる',
     date: new Date('2023-2-1'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/singer-songwriter-comedian',
     title: '芸人総シンガーソングライター化現象',
     date: new Date('2023-1-28'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/chatgpt-described-pasta-that-does-not-exist',
     title: 'ChatGPTにレシピを訊いたら架空のパスタ「フォルグッティ」を教えられた話',
     date: new Date('2023-1-25'),
-    genre: 'blog'
+    genre: 'article'
   },
   {
     path: '/blog/review-of-as-internet',
     title: '今さら20年前の本を読んで、個人サイトを作った話',
     date: new Date('2023-1-18'),
-    genre: 'blog'
+    genre: 'article'
   }
 ]
