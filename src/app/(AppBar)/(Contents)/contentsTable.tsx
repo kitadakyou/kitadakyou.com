@@ -12,13 +12,13 @@ export default function ContentsTable () {
   const genreToJp = (genreName: string) => {
     switch (genreName) {
       case 'blog':
-        return '雑記'
+        return '日常'
       case 'novel':
         return '小説'
       case 'music':
         return '音楽'
-      case 'stream':
-        return '配信'
+      case 'article':
+        return '記事'
     }
   }
   const genreTdClassName = (genreName: string) => {
