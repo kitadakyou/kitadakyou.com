@@ -6,12 +6,6 @@ type ContentApi = {
 }
 
 export const contents: ContentApi[] = [
-//  {
-//    path: '/blog/i-want-netflix-real-store',
-//    title: 'Netflixの実店舗が欲しい',
-//    date: new Date('2023-2-10'),
-//    genre: 'blog'
-//  },
 {
   path: '/blog/oat-milk-coffee',
   title: 'オーツミルクコーヒー',
