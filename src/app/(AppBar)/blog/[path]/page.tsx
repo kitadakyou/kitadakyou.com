@@ -1,6 +1,11 @@
-import LayoutContent from '../layoutContent'
+import Link from 'next/link'
+import Image from 'next/image'
+import OtherContentLink from './OtherContentLink'
+import SnsShareLinks from './SnsShareLinks'
 import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 import { Metadata } from 'next'
+import styles from './styles.module.css'
+
 
 interface PageProps {
   params: Promise<{
@@ -9,8 +14,8 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const path = (await params).path
-  const metadata = findContentDataByPath(path)
+  const slug = (await params).path
+  const metadata = findContentDataByPath(slug)
 
   if (!metadata) {
     return { title: 'Not Found' }
@@ -20,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: metadata.title,
     openGraph: {
       images: [{
-        url: `/api/og/blog/${path}`,
+        url: `/api/og/blog/${slug}`,
         width: 1200,
         height: 630,
       }],
@@ -29,19 +34,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function Page({ params }: PageProps) {
-  const path = (await params).path
-  const metadata = findContentDataByPath(path)
+  const slug = (await params).path
+  const metadata = findContentDataByPath(slug)
 
   if (!metadata) return null
 
-  const Article = (await import(`articles/${path}.mdx`)).default
+  const Article = (await import(`articles/${slug}.mdx`)).default
 
   return (
-    <LayoutContent 
-      title={metadata.title}
-      path={path}
-    >
+    <main className={styles.main}>
+    <article className={styles.article}>
       <Article />
-    </LayoutContent>
+    </article>
+    <section className={styles.shareSection}>
+      <SnsShareLinks title={metadata.title} slug={slug} />
+    </section>
+    <section className={styles.linkSection}>
+      <OtherContentLink slug={slug} />
+    </section>
+  </main>
   )
 }

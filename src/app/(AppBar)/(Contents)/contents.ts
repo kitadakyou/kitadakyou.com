@@ -91,6 +91,18 @@ export const contents: ContentApi[] = [
   }
 ]
 
-export function findContentDataByPath(path: string) {
-  return contents.find(c => c.path === `/blog/${path}`)
+export function findContentDataByPath(slug: string) {
+  return contents.find(c => c.path === `/blog/${slug}`)
+}
+
+export function getCurrentIndex(slug: string) {
+  return contents.findIndex(elem => elem.path === `/blog/${slug}`)
+}
+
+export function getContentNum() {
+  return contents.length
+}
+
+export function getPathByIndex(index: number) {
+  return contents[index].path
 }
