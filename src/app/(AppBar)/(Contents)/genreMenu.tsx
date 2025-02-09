@@ -4,7 +4,7 @@ import styles from './menu.module.css'
 
 export default function GenreMenu () {
   const [selected, setSelected] = useState('')
-  function selectButton (e: any) {
+  function selectButton (e: string) {
     setSelected(e)
   }
   const buttonInfo = [

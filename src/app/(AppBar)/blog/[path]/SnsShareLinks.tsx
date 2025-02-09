@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from 'next/link'
+import Image from 'next/image'
 import styles from './styles.module.css'
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   slug: string
 }
 
-export default function SnsShareLinks({title, slug}: Props): React.ReactNode {
+export default function SnsShareLinks ({ title, slug }: Props): React.ReactNode {
   return (
     <Link href={`https://twitter.com/intent/tweet?text=${title}%20https%3A%2F%2Fkitadakyou.com%2Fblog%2F${slug}%20%23北田共のブログ`} target='_blank'>
       <button className={styles.twitterButton}>

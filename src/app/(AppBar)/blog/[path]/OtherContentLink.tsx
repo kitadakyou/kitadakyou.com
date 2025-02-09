@@ -1,11 +1,11 @@
-import { getCurrentIndex, getContentNum, getPathByIndex } from 'app/(AppBar)/(Contents)/contents'
 import Link from 'next/link'
+import { getCurrentIndex, getContentNum, getPathByIndex } from 'app/(AppBar)/(Contents)/contents'
 
 interface Props {
   slug: string
 }
 
-export default function OtherContentLink({ slug }: Props): React.ReactNode {
+export default function OtherContentLink ({ slug }: Props): React.ReactNode {
   const currentIndex = getCurrentIndex(slug)
   const contetsNum = getContentNum()
   const hasPreviousLink = currentIndex >= 0 && contetsNum - 1 > currentIndex
@@ -19,7 +19,7 @@ export default function OtherContentLink({ slug }: Props): React.ReactNode {
         <Link href='/'>一覧へ</Link>
       </div>
       <div>
-      { hasNextLink && <Link href={getPathByIndex(currentIndex - 1)}>次の記事へ</Link> }
+        { hasNextLink && <Link href={getPathByIndex(currentIndex - 1)}>次の記事へ</Link> }
       </div>
     </>
   )

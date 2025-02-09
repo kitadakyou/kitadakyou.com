@@ -21,19 +21,26 @@
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
     "@vercel/og": "^0.6.5",
-    "eslint": "9.9.0",
-    "eslint-config-next": "15.1.6",
     "next": "15.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.20.0",
+    "@next/eslint-plugin-next": "^15.1.6",
+    "@stylistic/eslint-plugin": "^3.1.0",
+    "eslint": "9.9.0",
+    "eslint-config-next": "15.1.6",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-promise": "^7.2.1",
-    "ts-node": "^10.9.2"
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.23.0"
   },
   "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
   "pnpm": {

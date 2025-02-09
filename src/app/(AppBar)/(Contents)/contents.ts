@@ -6,41 +6,41 @@ type ContentApi = {
 }
 
 export const contents: ContentApi[] = [
-{
-  path: '/blog/oat-milk-coffee',
-  title: 'オーツミルクコーヒー',
-  date: new Date('2025-02-08'),
-  genre: 'blog'
-},{
-  path: '/blog/narrowing-the-field-of-vision',
-  title: 'たまには狭い画面で仕事をするのもいい',
-  date: new Date('2024-9-30'),
-  genre: 'article'
-},
-{
-  path: '/blog/fan-fiction-of-emio',
-  title: '『ファミコン探偵俱楽部 笑み男』の畳み方について二次創作してみた',
-  date: new Date('2024-9-08'),
-  genre: 'article'
-},
-{
-  path: '/blog/went-to-a-medical-checkup-2',
-  title: '人間ドックに行ってきた話(後編)',
-  date: new Date('2024-8-12'),
-  genre: 'blog'
-},
-{
-  path: '/blog/went-to-a-medical-checkup-1',
-  title: '人間ドックに行ってきた話(前編)',
-  date: new Date('2024-8-11'),
-  genre: 'blog'
-},
-{
-  path: '/blog/afterwards-of-in-the-rain',
-  title: 'あとがき 『イン・ザ・レイン』',
-  date: new Date('2024-5-14'),
-  genre: 'novel'
-},
+  {
+    path: '/blog/oat-milk-coffee',
+    title: 'オーツミルクコーヒー',
+    date: new Date('2025-02-08'),
+    genre: 'blog'
+  }, {
+    path: '/blog/narrowing-the-field-of-vision',
+    title: 'たまには狭い画面で仕事をするのもいい',
+    date: new Date('2024-9-30'),
+    genre: 'article'
+  },
+  {
+    path: '/blog/fan-fiction-of-emio',
+    title: '『ファミコン探偵俱楽部 笑み男』の畳み方について二次創作してみた',
+    date: new Date('2024-9-08'),
+    genre: 'article'
+  },
+  {
+    path: '/blog/went-to-a-medical-checkup-2',
+    title: '人間ドックに行ってきた話(後編)',
+    date: new Date('2024-8-12'),
+    genre: 'blog'
+  },
+  {
+    path: '/blog/went-to-a-medical-checkup-1',
+    title: '人間ドックに行ってきた話(前編)',
+    date: new Date('2024-8-11'),
+    genre: 'blog'
+  },
+  {
+    path: '/blog/afterwards-of-in-the-rain',
+    title: 'あとがき 『イン・ザ・レイン』',
+    date: new Date('2024-5-14'),
+    genre: 'novel'
+  },
   {
     path: '/blog/the-drug-that-said-nightmares-as-side-effect',
     title: '副作用に「悪夢」と書いてある薬を飲んだら、ちゃんと悪夢を見た話',
@@ -91,18 +91,18 @@ export const contents: ContentApi[] = [
   }
 ]
 
-export function findContentDataByPath(slug: string) {
+export function findContentDataByPath (slug: string) {
   return contents.find(c => c.path === `/blog/${slug}`)
 }
 
-export function getCurrentIndex(slug: string) {
+export function getCurrentIndex (slug: string) {
   return contents.findIndex(elem => elem.path === `/blog/${slug}`)
 }
 
-export function getContentNum() {
+export function getContentNum () {
   return contents.length
 }
 
-export function getPathByIndex(index: number) {
+export function getPathByIndex (index: number) {
   return contents[index].path
 }
