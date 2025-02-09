@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import styles from './contentsTable.module.css'
 import { contents } from 'app/(AppBar)/(Contents)/contents'
+import styles from './contentsTable.module.css'
 
 export default function ContentsTable () {
   const router = useRouter()
@@ -11,14 +11,14 @@ export default function ContentsTable () {
   }
   const genreToJp = (genreName: string) => {
     switch (genreName) {
-      case 'blog':
-        return '日常'
-      case 'novel':
-        return '小説'
-      case 'music':
-        return '音楽'
-      case 'article':
-        return '記事'
+    case 'blog':
+      return '日常'
+    case 'novel':
+      return '小説'
+    case 'music':
+      return '音楽'
+    case 'article':
+      return '記事'
     }
   }
   const genreTdClassName = (genreName: string) => {

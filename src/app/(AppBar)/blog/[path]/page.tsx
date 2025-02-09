@@ -1,11 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import { Metadata } from 'next'
+import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 import OtherContentLink from './OtherContentLink'
 import SnsShareLinks from './SnsShareLinks'
-import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
-import { Metadata } from 'next'
 import styles from './styles.module.css'
-
 
 interface PageProps {
   params: Promise<{
@@ -13,7 +10,7 @@ interface PageProps {
   }>
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata ({ params }: PageProps): Promise<Metadata> {
   const slug = (await params).path
   const metadata = findContentDataByPath(slug)
 
@@ -27,13 +24,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [{
         url: `/api/og/blog/${slug}`,
         width: 1200,
-        height: 630,
-      }],
-    },
+        height: 630
+      }]
+    }
   }
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page ({ params }: PageProps) {
   const slug = (await params).path
   const metadata = findContentDataByPath(slug)
 
@@ -43,15 +40,15 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <main className={styles.main}>
-    <article className={styles.article}>
-      <Article />
-    </article>
-    <section className={styles.shareSection}>
-      <SnsShareLinks title={metadata.title} slug={slug} />
-    </section>
-    <section className={styles.linkSection}>
-      <OtherContentLink slug={slug} />
-    </section>
-  </main>
+      <article className={styles.article}>
+        <Article />
+      </article>
+      <section className={styles.shareSection}>
+        <SnsShareLinks title={metadata.title} slug={slug} />
+      </section>
+      <section className={styles.linkSection}>
+        <OtherContentLink slug={slug} />
+      </section>
+    </main>
   )
 }

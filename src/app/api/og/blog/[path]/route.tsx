@@ -1,6 +1,6 @@
-import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 import { notFound } from 'next/navigation'
 import { ImageResponse } from '@vercel/og'
+import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 
 // global.css から変数を読み込めないため、同じものを再定義
 const GENRE_COLORS = {
@@ -13,10 +13,9 @@ const GENRE_COLORS = {
 
 export const runtime = 'edge'
 
-export async function GET(
+export async function GET (
   request: Request
-) 
-{
+) {
   const path = request.url.split('/').pop()?.split('?')[0]
   const contentData = findContentDataByPath(path ?? '')
 
@@ -36,7 +35,7 @@ export async function GET(
         display: 'flex',
         flexDirection: 'column',
         border: `20px solid ${borderColor}`,
-        padding: '40px',
+        padding: '40px'
       }}
     >
       <div
@@ -44,7 +43,7 @@ export async function GET(
           flex: 1,
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'center'
         }}
       >
         <div
@@ -52,7 +51,7 @@ export async function GET(
             color: 'rgba(0,0,0,0.87)',
             fontSize: '60px',
             fontWeight: 'bold',
-            textAlign: 'center',
+            textAlign: 'center'
           }}
         >
           {contentData.title}
@@ -78,7 +77,7 @@ export async function GET(
     element,
     {
       width: 1200,
-      height: 630,
+      height: 630
     }
   )
 }

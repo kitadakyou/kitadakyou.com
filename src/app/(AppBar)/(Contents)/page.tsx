@@ -1,6 +1,6 @@
+import Head from 'next/head'
 import styles from './index.module.css'
 import ContentsTable from './contentsTable'
-import Head from 'next/head'
 
 export default function Index () {
   return (

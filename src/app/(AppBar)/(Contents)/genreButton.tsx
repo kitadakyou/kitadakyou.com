@@ -4,7 +4,7 @@ type Props = {
   text: string,
   type: string,
   selected?: boolean,
-  onClick: any
+  onClick: (type: string) => void
 }
 
 export default function GenreButton (props: Props) {
@@ -23,8 +23,9 @@ export default function GenreButton (props: Props) {
     return ''
   }
 
-  const clickHandler = (e: any): void => {
-    props.onClick(e.target.dataset.type)
+  const clickHandler = (e: React.MouseEvent<HTMLButtonElement>): void => {
+    const button = e.target as HTMLButtonElement
+    props.onClick(button.dataset.type ?? '')
   }
 
   return (
@@ -34,7 +35,7 @@ export default function GenreButton (props: Props) {
       onClick={clickHandler}
       data-type={props.type}
     >
-        {props.text}
+      {props.text}
     </button>
   )
 }
