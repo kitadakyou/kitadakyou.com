@@ -90,3 +90,7 @@ export const contents: ContentApi[] = [
     genre: 'article'
   }
 ]
+
+export function findContentDataByPath(path: string) {
+  return contents.find(c => c.path === `/blog/${path}`)
+}
