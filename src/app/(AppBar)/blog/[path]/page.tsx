@@ -34,7 +34,7 @@ export default async function Page({ params }: PageProps) {
 
   if (!metadata) return null
 
-  const Article = (await import(`./${path}.mdx`)).default
+  const Article = (await import(`articles/${path}.mdx`)).default
 
   return (
     <LayoutContent 
