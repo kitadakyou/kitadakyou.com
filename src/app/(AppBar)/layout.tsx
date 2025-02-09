@@ -9,10 +9,10 @@ export default function RootLayout ({children}: { children: React.ReactNode }) {
         <link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
         <link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="プログラマー兼社長である北田共が本職とは関係のない記事や物語、音楽などを発信するサイトです。" />
+        <meta name="description" content="本職とは関係のない文章を書き連ねる先。" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="KITADAKYOU.COM" />
-        <meta property="og:description" content="プログラマー兼社長である北田共が本職とは関係のない記事や物語、音楽などを発信するサイトです。" />
+        <meta property="og:description" content="本職とは関係のない文章を書き連ねる先。" />
         <meta name="twitter:card" content="summary" />
       </head>
       <body>
