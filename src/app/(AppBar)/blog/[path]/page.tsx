@@ -3,9 +3,9 @@ import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 import { Metadata } from 'next'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     path: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

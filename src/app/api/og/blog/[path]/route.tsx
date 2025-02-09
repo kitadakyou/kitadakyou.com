@@ -14,10 +14,11 @@ const GENRE_COLORS = {
 export const runtime = 'edge'
 
 export async function GET(
-  request: Request,
-  { params }: { params: { path: string } }
-) {
-  const contentData = findContentDataByPath(params.path)
+  request: Request
+) 
+{
+  const path = request.url.split('/').pop()?.split('?')[0]
+  const contentData = findContentDataByPath(path ?? '')
 
   if (!contentData) {
     return notFound()
