@@ -1,4 +1,4 @@
-import { contents } from 'app/(AppBar)/(Contents)/contents'
+import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
 import { notFound } from 'next/navigation'
 import { ImageResponse } from '@vercel/og'
 
@@ -80,8 +80,4 @@ export async function GET(
       height: 630,
     }
   )
-}
-
-function findContentDataByPath(path: string) {
-  return contents.find(c => c.path === `/blog/${path}`)
 }
