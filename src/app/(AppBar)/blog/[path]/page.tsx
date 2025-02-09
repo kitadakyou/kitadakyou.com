@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: metadata.title,
     openGraph: {
       images: [{
-        url: `/api/og/${path}`,
+        url: `/api/og/blog/${path}`,
         width: 1200,
         height: 630,
       }],
@@ -32,12 +32,10 @@ export default async function Page({ params }: PageProps) {
   const path = (await params).path
   const metadata = findContentDataByPath(path)
 
-  console.log('metadata', metadata)
-
   if (!metadata) return null
 
   const Article = (await import(`./${path}.mdx`)).default
-  console.log('Article', Article)
+
   return (
     <LayoutContent 
       title={metadata.title}
