@@ -7,6 +7,12 @@ type ContentApi = {
 
 export const contents: ContentApi[] = [
   {
+    path: '/blog/giver-media-or-taker-media',
+    title: '吸い取るメディアと与えられるメディア',
+    date: new Date('2025-02-011'),
+    genre: 'article'
+  },
+  {
     path: '/blog/oat-milk-coffee',
     title: 'オーツミルクコーヒー',
     date: new Date('2025-02-08'),
