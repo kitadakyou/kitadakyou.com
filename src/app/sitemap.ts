@@ -3,7 +3,7 @@ import { contents } from './(AppBar)/(Contents)/contents'
 
 export default function sitemap (): MetadataRoute.Sitemap {
   const blogs = contents.map(content => ({
-    url: `https://kitadakyou.com/blog/${content.path}`,
+    url: `https://kitadakyou.com/blog${content.path}`,
     lastModified: content.date,
     changeFrequency: 'never' as const,
     priority: 1
