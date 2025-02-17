@@ -1,6 +1,15 @@
+import type { Metadata } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './about.module.css'
+
+export const metadata: Metadata = {
+  title: '北田共について',
+  openGraph: {
+    title: '著者来歴',
+    url: 'https://kitadakyou.com/about'
+  }
+}
 
 export default function About () {
   return (
