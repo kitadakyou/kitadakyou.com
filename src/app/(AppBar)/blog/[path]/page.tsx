@@ -20,7 +20,11 @@ export async function generateMetadata ({ params }: PageProps): Promise<Metadata
 
   return {
     title: metadata.title,
+    description: metadata.title,
     openGraph: {
+      title: metadata.title,
+      url: `https://kitadakyou.com/blog/${slug}`,
+      type: 'article',
       images: [{
         url: `/api/og/blog/${slug}`,
         width: 1200,
