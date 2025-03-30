@@ -7,6 +7,12 @@ type ContentApi = {
 
 export const contents: ContentApi[] = [
   {
+    path: '/blog/no-habits-life',
+    title: 'モーニングルーティーンのない私',
+    date: new Date('2025-03-30'),
+    genre: 'blog'
+  },
+  {
     path: '/blog/paid-to-be-misunderstood',
     title: '有名人は誤解されることでお金をもらっている',
     date: new Date('2025-02-22'),

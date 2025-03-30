@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import { contents } from 'app/(AppBar)/(Contents)/contents'
+import { contents } from 'libs/contents'
 import styles from './contentsTable.module.css'
 
 export default function ContentsTable () {

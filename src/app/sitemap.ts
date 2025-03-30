@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { contents } from './(AppBar)/(Contents)/contents'
+import { contents } from '../libs/contents'
 
 export default function sitemap (): MetadataRoute.Sitemap {
   const blogs = contents.map(content => ({

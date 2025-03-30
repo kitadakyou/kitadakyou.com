@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getCurrentIndex, getContentNum, getPathByIndex } from 'app/(AppBar)/(Contents)/contents'
+import { getCurrentIndex, getContentNum, getPathByIndex } from 'libs/contents'
 
 interface Props {
   slug: string

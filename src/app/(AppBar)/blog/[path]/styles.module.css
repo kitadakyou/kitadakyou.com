@@ -43,6 +43,12 @@
   padding: 1.5em;
 }
 
+.article blockquote {
+  margin-inline-start: 1.5rem;
+  border-left: 4px solid #f2f2f2;
+  padding-left: 1rem;
+}
+
 .linkSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
