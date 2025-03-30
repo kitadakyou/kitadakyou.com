@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { ImageResponse } from '@vercel/og'
-import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
+import { findContentDataByPath } from 'libs/contents'
 
 // global.css から変数を読み込めないため、同じものを再定義
 const GENRE_COLORS = {

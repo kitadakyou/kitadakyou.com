@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { findContentDataByPath } from 'app/(AppBar)/(Contents)/contents'
+import { findContentDataByPath } from 'libs/contents'
 import OtherContentLink from './OtherContentLink'
 import SnsShareLinks from './SnsShareLinks'
 import styles from './styles.module.css'
