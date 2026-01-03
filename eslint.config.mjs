@@ -1,3 +1,5 @@
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
 import { FlatCompat } from '@eslint/eslintrc'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -11,9 +13,9 @@ const compat = new FlatCompat({
 
 /** @type {import('eslint').Linter.Config[]} */
 const configs = [
-  ...compat.extends('next/core-web-vitals'),
-  ...compat.extends('next/typescript'),
-  ...compat.extends('standard'),
+  ...nextCoreWebVitals,
+  ...nextTypescript,
+  ...compat.extends("standard"),
   {
     ignores: ['components/ui/**',
       'components/Results/**/Charts/**',
