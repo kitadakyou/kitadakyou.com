@@ -7,6 +7,12 @@ type ContentApi = {
 
 export const contents: ContentApi[] = [
   {
+    path: '/blog/start-afresh',
+    title: '心機一転、毎週更新',
+    date: new Date('2026-07-25'),
+    genre: 'article'
+  },
+  {
     path: '/blog/true-radio-exercise',
     title: '本物のラジオ体操',
     date: new Date('2026-01-05'),
