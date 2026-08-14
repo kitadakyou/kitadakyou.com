@@ -6,7 +6,13 @@ type ContentApi = {
 }
 
 export const contents: ContentApi[] = [
-  {
+   {
+    path: '/blog/japanese-prime-ministers-speech-at-america-dinner-party',
+    title: 'アメリカの晩餐会での岸田総理のスピーチを見た',
+    date: new Date('2026-08-14'),
+    genre: 'article'
+   },
+   {
     path: '/blog/start-afresh',
     title: '心機一転、毎週更新',
     date: new Date('2026-07-25'),
